@@ -50,6 +50,11 @@ Gem::Specification.new do |spec|
     spec.add_dependency "byebug", "11.1.3"
   end
 
+  spec.post_install_message = <<~MESSAGE
+    To install Git hooks, run the following command in your Rails application:
+      bundle exec rake git_hooks:install
+  MESSAGE
+
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 end
