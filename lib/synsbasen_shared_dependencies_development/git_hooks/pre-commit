@@ -1,6 +1,6 @@
 #!/bin/sh
 # Run RuboCop before committing
-./bin/rubocop
+rubocop -a
 
 if [ $? -ne 0 ]; then
   echo "RuboCop checks failed. Fix the issues before committing."
