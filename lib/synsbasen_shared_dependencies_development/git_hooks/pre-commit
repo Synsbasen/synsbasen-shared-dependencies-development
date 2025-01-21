@@ -1,8 +1,9 @@
 #!/bin/sh
-# Run RuboCop before committing
-rubocop -a
+
+# Run Rubocop before committing
+rubocop
 
 if [ $? -ne 0 ]; then
-  echo "RuboCop checks failed. Fix the issues before committing."
+  echo "Rubocop checks failed. Fix the issues before committing."
   exit 1
 fi
