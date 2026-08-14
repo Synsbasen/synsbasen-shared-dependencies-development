@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "This gem provides a collection of development dependencies shared across Synsbasen's applications, including essential libraries for web application performance, monitoring, and error tracking."
   spec.homepage = "https://api.synsbasen.dk/"
   spec.license = "MIT"
-  spec.required_ruby_version = "~> 3.4.4"
+  spec.required_ruby_version = "~> 3.4.10"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dotenv-rails", "3.1.4"
   spec.add_dependency "factory_bot_rails", "6.4.4"
   spec.add_dependency "pry", "0.14.2"
-  spec.add_dependency "rack-mini-profiler", "2.3.4"
+  spec.add_dependency "rack-mini-profiler", "4.0.1"
   spec.add_dependency "rubocop", "1.68.0"
   spec.add_dependency "rubocop-rails-omakase", "1.0.0"
   spec.add_dependency "spring", "4.2.1"
